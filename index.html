@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Matching Game</title>
+  <meta name="description" content="">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/memory-game-logo.jpg">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1 class="text-center">Matching Game</h1>
+      <p class="text-center" id="msg-text"></p>
+    </header>
+
+    <section class="score-panel">
+      <ul id="stars-list" class="stars">
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+
+      <span id="moves-count" class="moves">3</span> Moves
+
+      <div id="reset-btn" class="restart">
+        <i class="fa fa-repeat"></i> Reset
+      </div>
+    </section>
+
+    <ul class="deck">
+      <li class="card">
+        <i class="fa fa-diamond"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-paper-plane-o"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-anchor"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-bolt"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-cube"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-anchor"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-leaf"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-bicycle"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-diamond"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-bomb"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-leaf"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-bomb"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-bolt"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-bicycle"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-paper-plane-o"></i>
+      </li>
+      <li class="card">
+        <i class="fa fa-cube"></i>
+      </li>
+    </ul>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
