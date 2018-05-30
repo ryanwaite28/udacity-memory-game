@@ -61,7 +61,9 @@
 
       if (lastFlipped) {
         if (card.childNodes[1].classList.item(1) === lastFlipped.childNodes[1].classList.item(1)) {
-          console.log('match found!');
+          let message = 'match found!';
+          console.log(message);
+          flash_msg(message);
           matches.push(card);
           matches.push(lastFlipped);
           lastFlipped = null;
@@ -71,7 +73,9 @@
           }
         }
         else {
-          console.log('no match...');
+          let message = 'no match.';
+          console.log(message);
+          flash_msg(message);
           pause = true;
           moves--;
           starsList.removeChild(starsList.children[0]);
@@ -98,7 +102,7 @@
     console.log(msg);
     alert(msg);
     isGameOver = true;
-    msgText.innerText = msg;
+    flash_msg(msg);
   }
 
   function resetGame() {
@@ -117,7 +121,12 @@
     allCards.forEach(function(card) {
       card.classList.remove('open', 'show');
     });
-    msgText.innerText = '';
+    flash_msg('New Game!');
+  }
+
+  function flash_msg(message) {
+    msgText.innerText = message;
+    setTimeout(function(){ msgText.innerText = ''; }, 1725);
   }
 
   // Referenced live webinar walkthrough with Mike Wales, https://developer.mozilla.org and https://www.w3schools.com for functions and process.
