@@ -27,7 +27,7 @@
   let hintBtn = document.getElementById('hint-btn');
   let msgText = document.getElementById('msg-text');
 
-  let moves = 3;
+  let moves = 5;
   let isGameOver = false;
 
   let matches = [];
@@ -175,7 +175,7 @@
     activateCards();
     flash_cards();
 
-    moves = 3;
+    moves = 5;
     isGameOver = false;
     matches = [];
     lastFlipped = null;
