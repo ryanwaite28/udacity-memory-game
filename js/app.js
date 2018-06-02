@@ -96,6 +96,8 @@
             let message = 'match found!';
             console.log(message);
             flash_msg(message);
+            card.classList.add('match');
+            lastFlipped.classList.add('match');
             matches.push(card);
             matches.push(lastFlipped);
             lastFlipped = null;
