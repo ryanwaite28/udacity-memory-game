@@ -2,23 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
   <title>Matching Game</title>
-  <meta name="description" content="">
-  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="Matching Game">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="img/memory-game-logo.jpg">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://ryanwaite28.github.io/script-store/js/stop-watch.js"></script>
+  <script src="js/app.js"></script>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="middle-box">
     <header>
-      <h1 class="text-center">Matching Game</h1>
+      <h4 class="text-center">Matching Game</h4>
       <p class="text-center"><a title="GitHub Project Page" href="https://github.com/ryanwaite28/udacity-memory-game">GitHub</a></p>
     </header>
 
@@ -27,30 +34,49 @@
         <li><i class="fa fa-star"></i></li>
         <li><i class="fa fa-star"></i></li>
         <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-star"></i></li>
       </ul>
-      <span id="moves-count" class="moves">5</span> Moves
+      <span id="grade" class="moves"></span>
 
-      <span style="margin: 0px 45px;"><strong><span id="msg-text"></span></strong></span>
+      <span style="margin: 0px 20px;">
+        <strong><span id="moves-text"></span></strong> Moves
+      </span>
 
-      <div id="hint-btn" class="hint">
-        <span><i class="fa fa-info"></i> Hint</span>
+      <span style="margin: 0px 20px;">
+        <strong><span id="time-text"></span></strong>
+      </span>
+
+      <span style="margin: 0px 20px;">
+        <strong><span id="msg-text"></span></strong>
+      </span>
+
+      <div id="info-btn" class="hint">
+        <span><i class="fa fa-info"></i> Info</span>
       </div>
-
       <div id="reset-btn" class="restart">
         <span><i class="fa fa-repeat"></i> Reset</span>
       </div>
-
-
     </section>
 
-    <ul id="deck" class="deck">
-
-    </ul>
+    <ul id="deck" class="deck" ></ul>
   </div>
 
-  <script src="js/app.js"></script>
+  <!--  -->
+
+  <div id="game_modal" class="modal">
+    <div class="modal-content">
+      <h4>Congrats!</h4>
+      <h5>Game Results</h5>
+
+      <p><strong>Time:</strong> <span id="time_results"></span></p>
+      <p><strong>Moves:</strong> <span id="moves_results"></span></p>
+      <p><strong>Grade:</strong> <span id="grade_results"></span></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="modal_reset_btn">Replay</a>
+    </div>
+  </div>
+
 </body>
 
 </html>
