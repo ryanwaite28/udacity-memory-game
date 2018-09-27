@@ -6,7 +6,7 @@ Game: https://ryanwaite28.github.io/udacity-memory-game/
 
 Matching Game! Click the cards to find a match. Match all 16 cards as fast and best as you can! <br/>
 
-Focuses on DOM manipulation, variables and object-oriented programming.
+A fun game for users to play! Focuses on DOM manipulation, variables and object-oriented programming.
 
 * Vanilla JS
 * jQuery
