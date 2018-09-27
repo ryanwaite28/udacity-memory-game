@@ -8,6 +8,8 @@ Matching Game! Click the cards to find a match. Match all 16 cards as fast and b
 
 A fun game for users to play! Focuses on DOM manipulation, variables and object-oriented programming.
 
+It's a \#SPA \#SinglePageApp
+
 * Vanilla JS
 * jQuery
 * CSS3
